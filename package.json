@@ -11,7 +11,11 @@
   "author": "Paul-Emmanuel Legrand",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "eslint": "^8.4.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1"
   },
   "dependencies": {
     "@prisma/client": "^3.6.0",
