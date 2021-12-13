@@ -6,7 +6,8 @@
   "scripts": {
     "start": "nodemon index.js",
     "prisma-init": "npx prisma init && touch ./prisma/seed.js",
-    "db-init": "npx prisma db pull && npx prisma generate"
+    "db-init": "npx prisma db pull && npx prisma generate",
+    "db-seed": "npx prisma db seed --preview-feature"
   },
   "author": "Paul-Emmanuel Legrand",
   "license": "ISC",
