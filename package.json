@@ -24,7 +24,6 @@
     "mysql2": "^2.3.3",
     "prisma": "^3.6.0",
     "swagger-jsdoc": "^6.1.0",
-    "swagger-ui-express": "^4.2.0",
-    "winston": "^3.3.3"
+    "swagger-ui-express": "^4.2.0"
   }
 }

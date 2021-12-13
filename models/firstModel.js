@@ -1,6 +1,5 @@
 const { PrismaClient } = require('@prisma/client');
 const prisma = new PrismaClient();
-const {  } = require('../error-types');
 
 const postOne = async() =>{
   

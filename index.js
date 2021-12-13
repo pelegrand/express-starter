@@ -4,14 +4,6 @@ const { SERVER_PORT, URL_CLIENT, DATABASE_URL } = require('./env');
 const swaggerUi = require("swagger-ui-express");
 const swaggerDocument = require('./swagger.json');
 
-const handleRecordNotFoundError = require('./middlewares/handleRecordNotFoundError');
-const handleUnauthorizedError = require('./middlewares/handleUnauthorizedError');
-const handleUserAlreadyExistError = require('./middlewares/handleUserAlreadyExistError');
-const handleBadRequestError = require('./middlewares/handleBadRequestError');
-const handleNoContentError = require('./middlewares/handleNoContentError');
-
-const logger = require('./winston/logger.winston');
-
 const app = express();
 
 app.use(
@@ -26,14 +18,8 @@ app.use(express.urlencoded({ extended: true }));
 
 // require('./routes')(app);
 
-app.use(handleUnauthorizedError);
-app.use(handleUserAlreadyExistError);
-app.use(handleBadRequestError);
-app.use(handleNoContentError);
-app.use(handleRecordNotFoundError);
-
 const server = app.listen(SERVER_PORT, () => {
-  logger.info(`Server is listening on : ${SERVER_PORT}`);
+  console.info(`Server is listening on : ${SERVER_PORT}`);
 });
 
 process.on('unhandledRejection', (error) => {

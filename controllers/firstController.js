@@ -1,10 +1,7 @@
-const { } = require('../error-types');
 const { postOne, getOne, getAll, putOne, deleteOne } = require('../models/firstModels');
-const logger = require('../winston/logger.winston');
-
 
 const handlePostOne = async (req, res) => {
-  
+
 };
 
 const handleGetAll = async (req, res) => {
