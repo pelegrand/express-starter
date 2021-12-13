@@ -14,5 +14,5 @@ module.exports = {
   SERVER_PORT,
   SECRET,
   URL_CLIENT,
-  DATABASE_URL
+  DATABASE_URL,
 };
